@@ -10,4 +10,4 @@ docs/*.synctex.gz
 docs/*.fdb_latexmk
 docs/*.tex
 
-lib
+build/
