@@ -258,8 +258,9 @@ void data_handler::random_shuffle_indexes(std::vector<int> *indexes)
 int main()
 {
     data_handler *dh = new data_handler();
-    dh->read_feature_vector("./data/train-images-idx3-ubyte");
-    dh->read_feature_labels("./data/train-labels-idx1-ubyte");
+    dh->read_feature_vector("../../data/train-images-idx3-ubyte");
+    dh->read_feature_labels("../../data/train-labels-idx1-ubyte");
     dh->split_data();
     dh->count_classes();
+    delete dh;
 }
