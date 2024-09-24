@@ -196,9 +196,9 @@ void data_handler::split_data()
 
     delete indexes;
 
-    printf("Training Data Size: %lu (approx: %.2f\%)\n", training_data->size(), TRAIN_SET_PERCENT * 100.0);
-    printf("Test Data Size: %lu (approx: %.2f\%)\n", test_data->size(), TEST_SET_PERCENT * 100.0);
-    printf("Validation Data Size: %lu (approx: %.2f\%)\n", validation_data->size(), VALIDATION_PERCENT * 100.0);
+    printf("Training Data Size: %lu (approx: %.2f %%)\n", training_data->size(), TRAIN_SET_PERCENT * 100.0);
+    printf("Test Data Size: %lu (approx: %.2f %%)\n", test_data->size(), TEST_SET_PERCENT * 100.0);
+    printf("Validation Data Size: %lu (approx: %.2f %%)\n", validation_data->size(), VALIDATION_PERCENT * 100.0);
 }
 
 void data_handler::count_classes()
