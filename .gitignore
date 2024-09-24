@@ -1,0 +1,11 @@
+.vscode
+
+dump/
+docs/*.aux
+docs/*.fls
+docs/*.log
+docs/*.out
+docs/*.toc
+docs/*.synctex.gz
+docs/*.fdb_latexmk
+docs/*.tex
