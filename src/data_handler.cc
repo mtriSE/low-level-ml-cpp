@@ -11,6 +11,10 @@ data_handler::data_handler()
 data_handler::~data_handler()
 {
     // TODO FREE dynamically allocated stuff
+    delete data_array;
+    delete training_data;
+    delete test_data;
+    delete validation_data;
 }
 
 void data_handler::read_feature_vector(std::string path)
@@ -48,6 +52,8 @@ void data_handler::read_feature_vector(std::string path)
             data_array->push_back(d);
         }
         printf("Successfully read and store %lu feature vectors.\n", data_array->size());
+
+        fclose(f);
     }
     else
     {

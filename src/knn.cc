@@ -7,7 +7,6 @@ knn::knn(int val)
 
 knn::knn()
 {
-    // TODO
     training_data = new std::vector<data *>;
     test_data = new std::vector<data *>;
     validation_data = new std::vector<data *>;
@@ -15,7 +14,9 @@ knn::knn()
 
 knn::~knn()
 {
-    // TODO
+    delete training_data;
+    delete test_data;
+    delete validation_data;
 }
 
 void knn::find_knearest(data *query_point)

@@ -11,3 +11,4 @@ docs/*.tex
 
 build/
 tests/
+obj/

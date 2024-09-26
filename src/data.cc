@@ -7,7 +7,7 @@ data::data()
 
 data::~data()
 {
-    // TODO
+    delete feature_vector;
 }
 
 void data::set_feature_vector(std::vector<uint8_t> *vect)
