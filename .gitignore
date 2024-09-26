@@ -1,6 +1,5 @@
 .vscode
 
-dump/
 docs/*.aux
 docs/*.fls
 docs/*.log
@@ -11,3 +10,4 @@ docs/*.fdb_latexmk
 docs/*.tex
 
 build/
+tests/
